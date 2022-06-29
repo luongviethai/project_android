@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopKhachHang"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="7">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/undo"
+                android:id="@+id/ibtnQL"
+                ></ImageButton>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="6.9"
+            android:layout_height="wrap_content"
+            android:text="Sản Phẩm Của Tôi"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#D84315">
+        </TextView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone"
+                android:layout_weight="0.1"
+                android:id="@+id/ibtnDonHang"
+                ></ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:padding="5dp">
+            <EditText
+                android:background="@drawable/custom_edit_text"
+                android:id="@+id/edtTimSP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="Nhập tên sản phẩm">
+            </EditText>
+            <ImageButton
+                android:id="@+id/ibtnTimSP"
+                android:src="@drawable/find"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </ImageButton>
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ibtnThemSPCT"
+            android:src="@drawable/plus"></ImageButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:layout_marginTop="5dp"
+            android:verticalSpacing="5dp"
+            android:background="#E3E0E0"
+            android:id="@+id/grvDsSPCT">
+
+        </GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

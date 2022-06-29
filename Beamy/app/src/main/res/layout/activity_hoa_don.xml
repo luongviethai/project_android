@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonHangCuaToiActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/undo"
+            android:id="@+id/ibtnQL">
+
+        </ImageButton>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn mua"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#D84315"
+        android:gravity="center">
+    </TextView>
+    </LinearLayout>
+    <GridView
+        android:background="#EDECEC"
+        android:verticalSpacing="10dp"
+        android:id="@+id/gvhoadon"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </GridView>
+</LinearLayout>

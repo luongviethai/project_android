@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThanhToanActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#DDE8ED">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Địa chỉ nhận hàng"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#D84315"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="9"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txttienhoadon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Số lượng"
+                android:textColor="#E8306E"
+                android:textSize="25dp"></TextView>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edttenkhachhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Nhập tên"
+            android:padding="10dp"
+            android:shadowColor="#670707"
+            android:textColor="#101010"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/edtdiachikhachhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Nhập địa chỉ"
+            android:padding="10dp"
+            android:shadowColor="#670707"
+            android:textColor="#101010"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/edtsdtkhachhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="Nhập số điện thoại"
+            android:inputType="number"
+            android:padding="10dp"
+            android:shadowColor="#670707"
+            android:textColor="#101010"
+            android:textSize="20dp"></EditText>
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D84315"
+            android:text="Đặt hàng"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+</LinearLayout>

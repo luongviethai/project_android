@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DsKhachHangActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:text="Danh sách khách hàng"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#D84315">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:padding="5dp">
+            <EditText
+                android:background="@drawable/custom_edit_text"
+                android:id="@+id/edttimkhachhang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="Nhập tên khách hàng">
+            </EditText>
+            <ImageButton
+                android:id="@+id/ibtntimkhachhang"
+                android:src="@drawable/find"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </ImageButton>
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ibtnThemKH"
+            android:src="@drawable/plus"></ImageButton>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:layout_marginTop="5dp"
+            android:verticalSpacing="5dp"
+            android:id="@+id/lvwDsKhachHang"
+            android:background="#FAF6F6">
+
+        </ListView>
+
+
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#FF6600">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+                ></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtShopCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F1EFEF"
+                android:padding="10dp"
+                android:text="Shop của tôi"
+                android:textColor="#121111"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#F1EFEF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn mua"
+                android:id="@+id/txtdonhang"
+                android:textSize="25dp"
+                android:textColor="#121111">
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#F1EFEF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hỗ trợ"
+                android:id="@+id/txtdiachi"
+                android:textSize="25dp"
+                android:textColor="#121111">
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#F1EFEF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ý kiến đóng góp"
+                android:id="@+id/txtykien"
+                android:textSize="25dp"
+                android:textColor="#121111">
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#F1EFEF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:id="@+id/txtDangXuat"
+                android:textSize="25dp"
+                android:textColor="#121111">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinActivity"
+    android:orientation="vertical"
+    android:background="#fafafa">
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="#BAB8B8">
+            <ImageView
+                android:id="@+id/imgnhanhinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="25dp"
+
+                    android:gravity="center"
+                    android:text="CH GROUP"
+                    android:textColor="#D84315"
+                    android:textSize="20dp"></TextView>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BEAMY"
+                    android:id="@+id/txtnhanten"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtgiamgia"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm giá"
+                android:textSize="20dp"
+                android:textColor="#D88F24">
+            </TextView>
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free ship nội thành"
+                android:textSize="20dp"
+                android:id="@+id/txtkhuvucship"
+                android:textColor="#D88F24">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtnhangia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá:"
+                android:textSize="30dp"
+                android:textColor="#F60404">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:text="Mô tả"
+                android:textSize="20dp"
+                android:id="@+id/txtnhanmota"
+                android:textColor="#121111">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếp tục mua hàng"
+                android:id="@+id/btnTtMuaHang"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#D84315"
+                ></Button>
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnmuangay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+
+                android:backgroundTint="#D84315"
+                android:text="Thêm vào giỏ"
+                ></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuaSanPhamCT"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EAE7E7">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/undo"
+            android:id="@+id/ibtnQL"
+            ></ImageButton>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa thông tin"
+
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgSuaSP"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bean3" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Tên sản phẩm" />
+
+        <EditText
+            android:id="@+id/eedtTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá" />
+
+        <EditText
+            android:id="@+id/eedtGiaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+<!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại" />
+
+        <TextView
+            android:id="@+id/eedtLoaiSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            />
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả" />
+
+        <EditText
+            android:id="@+id/eedtMotaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D84315"
+        android:text="Xóa"
+        android:textColor="@color/white"></Button>
+
+    <Button
+            android:id="@+id/btnSuaSP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D84315"
+            android:text="Lưu"
+            android:textColor="@color/white"
+        android:layout_marginLeft="150dp"></Button>
+
+
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
